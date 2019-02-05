@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(1, 141, 255, 0.5);
+}
+
+span b {
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.messageText {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.timeStamp {
+  color: #8080807a;
+}
+
+.msg {
+  align-items: center;
+  display: flex;
+}
+
+.avatar {
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid rgba(0, 228, 15, 0.5);
+  margin-right: 0.5em;
+}
+
+body {
+  overflow: hidden;
+}
+textarea,
+input {
+  outline: none;
+}
+.message span {
+  vertical-align: middle;
+}
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 52px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+#messages div {
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 100%;
+  padding: 0.5rem 2rem;
+}
+#messages div:nth-child(odd) {
+  background: rgba(0, 57, 161, 0.5);
+  color: white;
+}
+
+.emoji {
+  font-size: 32px;
+  top: 0;
+}
+.cardHover {
+  color: rgba(255, 252, 66, 0.5);
+  cursor: pointer;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0 1.5em;
+}
+#chatbox {
+  z-index: 3;
+  width: 550px;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  left: 1350px;
+  top: 10px;
+  border-left: 1px solid rgba(1, 141, 255, 0.5);
+  border-right: 1px solid rgba(1, 141, 255, 0.5);
+  border-top: 1px solid rgba(1, 141, 255, 0.5);
+  border-bottom: none;
+  overflow-y: scroll;
+}
+#chatbox input {
+  background-color: #000f29;
+  color: white;
+  -ms-flex-item-align: inline-block;
+  -ms-grid-row-align: inline-block;
+  align-self: inline-block;
+  font-size: 16px;
+  padding: 1em 2em;
+  width: 550px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  border-top: 1px solid #0039a1;
+  border: none;
+  margin-top: 1em;
+  border-bottom: 1px solid rgba(1, 141, 255, 0.5);
+  position: fixed;
+  bottom: 0;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+*:focus {
+  outline: none;
+}
+body,
+html {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(black),
+    to(#00153b)
+  );
+  background: -webkit-linear-gradient(black, #00153b);
+  background: -o-linear-gradient(black, #00153b);
+  background: linear-gradient(black, #00153b);
+}
+
+html,
+body {
+  height: 100%;
+}

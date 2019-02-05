@@ -1,2 +1,2 @@
 # DuelLinksOnline
-Duel Links Online
+Discontinued online Yu-Gi-Oh browser game.
